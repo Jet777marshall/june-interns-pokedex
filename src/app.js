@@ -11,7 +11,6 @@ const __dirname = dirname(__filename);
 const app = express();
 const { port: PORT, nodeEnv } = config;
 
-
 // ============================================
 // MIDDLEWARE
 // ============================================
@@ -24,7 +23,6 @@ app.use(express.static(join(__dirname, '../public')));
 // ============================================
 app.set('view engine', 'ejs');
 app.set('views', join(__dirname, 'views'));
-
 
 // ============================================
 // VIEW HELPERS (available in every template)
